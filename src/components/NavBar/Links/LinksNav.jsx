@@ -8,7 +8,7 @@ const LinksNav = () => {
         <Link
           key={index}
           to={link === "home" ? "/" : link}
-          className="capitalize text-center text-white text-md font-Jost font-light rounded-2xl  m-2 sm:w-24 sm:text-xl"
+          className="capitalize text-center text-white text-md font-Jost font-light rounded-2xl  m-2 sm:w-24 sm:text-xl ease-in-out duration-100 lg:hover:scale-105"
         >
           {link}
         </Link>

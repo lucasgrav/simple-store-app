@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-2">
+    <section className="flex flex-col justify-center items-center gap-2 lg:justify-start">
       <h2 className="font-Nunito font-bold text-xl">Contact Us</h2>
       <div className="flex flex-col items-center gap-2">
         <p className="flex font-Jost gap-4 text-[#5e5e5e]">email@email.com</p>

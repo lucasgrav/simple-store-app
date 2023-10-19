@@ -7,12 +7,12 @@ import TitleHome from "./Title/TitleHome";
 const InfoHome = () => {
   return (
     <main className="flex flex-col">
-      <div className="flex flex-col p-4 gap-2">
+      <div className="flex flex-col p-4 gap-2 md:items-center ">
         <TitleHome />
         <CaptionHome />
         <ImageHome />
         <DescriptionHome />
-        <ButtonShop/>
+        <ButtonShop />
       </div>
     </main>
   );

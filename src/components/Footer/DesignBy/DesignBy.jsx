@@ -1,8 +1,8 @@
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 const DesignBy = () => {
   return (
-    <section className="flex flex-col items-center my-4">
-      <div className="text-[#5e5e5e] text-4xl flex gap-4 py-2">
+    <section className="flex flex-col items-center my-4 lg:my-0 lg:justify-start lg:gap-2">
+      <div className="text-[#5e5e5e] text-4xl flex gap-4 py-2 lg:py-0">
         <BiLogoLinkedin />
         <BiLogoGithub />
       </div>
