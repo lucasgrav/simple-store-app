@@ -1,6 +1,5 @@
 import LinksNav from "./Links/LinksNav";
 import LogoNav from "./Logo/LogoNav";
-import ShoppingCart from "./ShoppingCart/ShoppingCart";
 
 const NavBar = () => {
   return (
