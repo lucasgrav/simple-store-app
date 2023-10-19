@@ -14,24 +14,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: 25,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-        }}
-        transition={{
-          duration: 0.3,
-          delay: 0.3,
-        }}
-      >
-        <InfoHome />
-      </motion.div>
+      <InfoHome />
       <CarrouselHome />
-
       <motion.div
         initial={{
           opacity: 0,
