@@ -1,7 +1,7 @@
 import { AiOutlineShoppingCart, AiOutlineStar } from "react-icons/ai";
 const CardProduct = ({ title, img, price, rating }) => {
   return (
-    <article className=" flex w-full gap-7 items-start p-4 border-b border-[#ff449546] sm:justify-center ">
+    <article className=" flex w-full lg:w-[60%] gap-7 items-start p-4 border-b border-[#ff449546] sm:justify-center ">
       <div className=" w-[100px] flex justify-center ">
         <img src={img} alt={title} className="w-[50px] md:w-[80px]" />
       </div>
