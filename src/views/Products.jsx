@@ -12,10 +12,8 @@ const Products = () => {
   return (
     <main>
       <FilterProducts />
-      
       <ShoppingCart/>
       <ContainerProducts />;
-      
      
     </main>
   );

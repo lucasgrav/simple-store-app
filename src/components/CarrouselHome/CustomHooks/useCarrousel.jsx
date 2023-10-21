@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 const useCarrousel = () => {
-  const PRODUCTS = useSelector((state) => state.allProducts);
+  const PRODUCTS = useSelector((state) => state.productsBackUp);
 
   const [index, setIndex] = useState({
     cardOne: 0,
