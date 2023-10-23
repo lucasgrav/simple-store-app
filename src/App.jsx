@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import Footer from "./components/Footer/Footer";
 import Products from "./views/Products";
 import ModalCart from "./components/ModalCart/ModalCart";
+import Details from "./views/Details";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/details/:id" element={<Details/>} />
       </Routes>
       <ModalCart/>
       <Footer />

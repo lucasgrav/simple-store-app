@@ -1,8 +1,9 @@
-import { AiOutlineShoppingCart} from "react-icons/ai";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import CardCart from "./CardCart/CardCart";
 import uuid from "react-uuid";
 import ModalCart from "../ModalCart/ModalCart";
+import ModalPurchase from "../ModalPurchase/ModalPurchase";
 
 const ShoppingCart = () => {
   const PRODUCTS = useSelector((state) => state.cartShop);
@@ -36,9 +37,8 @@ const ShoppingCart = () => {
         <p className="font-Jost  text-[#ff4495]">
           TOTAL: $ {Math.round(PRICE)}
         </p>
-        <button className="bg-[#ff4495] p-2 font-Nunito text-white rounded-lg w-16">
-          Buy
-        </button>
+
+        <ModalPurchase products={PRODUCTS.length > 0} />
       </footer>
     </section>
   );

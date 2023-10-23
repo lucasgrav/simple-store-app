@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const LinksNav = () => {
   const LOCATION = useLocation();
-  const LINKS = ["home", "products", "contact"];
+  const LINKS = ["home", "products", "about"];
 
   return (
     <ul className="flex justify-around gap-4 px-4 bg-[#ff4495] rounded-lg">
@@ -11,7 +11,9 @@ const LinksNav = () => {
           key={index}
           to={link === "home" ? "/" : link}
           className={`${
-            LOCATION.pathname === `/${link}` ? "font-normal border-b-2 border-white" : "font-light"
+            LOCATION.pathname === `/${link}`
+              ? "font-normal border-b-2 border-white"
+              : "font-light"
           } ${
             LOCATION.pathname === "/" && link === "home"
               ? "font-normal border-b-2 border-white"

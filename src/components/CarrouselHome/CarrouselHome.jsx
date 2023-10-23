@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import CardCarrousel from "./CardCarrousel/CardCarrousel";
 import useCarrousel from "./CustomHooks/useCarrousel";
+import { Progress } from "@nextui-org/react";
 
 const CarrouselHome = () => {
   const { PRODUCTS, index, changeItem } = useCarrousel();
@@ -54,7 +55,13 @@ const CarrouselHome = () => {
           </div>
         </div>
       ) : (
-        "loading"
+        <Progress
+        size="sm"
+        isIndeterminate
+        aria-label="Loading..."
+        className="max-w-md"
+        color="danger"
+      />
       )}
     </div>
   );

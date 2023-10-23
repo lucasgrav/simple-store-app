@@ -7,6 +7,7 @@ import {
   SEARCH_PRODUCT,
   ADD_CART,
   DELETE_CART_PRODUCT,
+  CLEAN_CART,
 } from "./action-types";
 import axios from "axios";
 
@@ -53,4 +54,7 @@ export const addCart = (id) => {
 };
 export const deleteCartProduct = (id) => {
   return { type: DELETE_CART_PRODUCT, payload: id };
+};
+export const cleanCart = () => {
+  return { type: CLEAN_CART };
 };

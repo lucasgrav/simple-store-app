@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { BsCartPlus } from "react-icons/bs";
-import { CgMore } from "react-icons/cg";
+import { AiOutlineEye } from "react-icons/ai";
 import ButtonCard from "./ButtonCard/ButtonCard";
 import { useDispatch } from "react-redux";
 import { addCart } from "../../../redux/actions";
+import { Link } from "react-router-dom";
 const Card = ({ title, image, price, id }) => {
   const dispatch = useDispatch();
   return (
@@ -22,9 +23,11 @@ const Card = ({ title, image, price, id }) => {
         delay: 0.3,
       }}
     >
-      <div className="h-[105px] lg:h-[200px] flex items-center">
-        <img src={image} alt={title} className="w-[60px] lg:w-[105px]" />
-      </div>
+      <Link to={`/details/${id}`}>
+        <div className="h-[105px] lg:h-[200px] flex items-center">
+          <img src={image} alt={title} className="w-[60px] lg:w-[105px]" />
+        </div>
+      </Link>
       <h2 className="font-Jost  text-sm truncate max-w-[200px]">{title}</h2>
       <div className="flex items-center gap-4">
         <ButtonCard>$ {price}</ButtonCard>
@@ -34,9 +37,11 @@ const Card = ({ title, image, price, id }) => {
             onClick={() => dispatch(addCart(id))}
           />
         </ButtonCard>
-        <ButtonCard>
-          <CgMore className="text-2xl" />
-        </ButtonCard>
+        <Link to={`/details/${id}`}>
+          <ButtonCard>
+            <AiOutlineEye className="text-2xl" />
+          </ButtonCard>
+        </Link>
       </div>
     </motion.div>
   );

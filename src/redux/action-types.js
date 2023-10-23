@@ -6,3 +6,4 @@ export const RESET_FILTERS = "RESET_FILTERS";
 export const SEARCH_PRODUCT = "SEARCH_PRODUCT";
 export const ADD_CART = "ADD_CART";
 export const DELETE_CART_PRODUCT = "DELETE_CART_PRODUCT";
+export const CLEAN_CART = "CLEAN_CART";

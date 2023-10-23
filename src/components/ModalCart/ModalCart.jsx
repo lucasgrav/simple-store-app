@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import CardCart from "../ShoppingCart/CardCart/CardCart";
 import uuid from "react-uuid";
 import { useLocation } from "react-router-dom";
+import ModalPurchase from "../ModalPurchase/ModalPurchase";
 
 const ModalCart = () => {
   const LOCATION = useLocation();
@@ -46,7 +47,7 @@ const ModalCart = () => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 border-b border-[#ff449546]">
                 <AiOutlineShoppingCart className="text-5xl text-[#ff4495]" />
               </ModalHeader>
               <ModalBody>
@@ -70,13 +71,20 @@ const ModalCart = () => {
                   )}
                 </div>
               </ModalBody>
-              <ModalFooter>
-                <Button className=" font-Jost text-[#ff4495] " onPress={onClose}>
-                  Close
-                </Button>
-                <Button className="bg-[#ff4495] font-Jost text-white" onPress={onClose}>
-                 Buy
-                </Button>
+              <ModalFooter className="flex flex-col lg:flex-row justify-center items-center gap-4">
+                <p className="font-Jost font-bold text-[#ff4495]">
+                  TOTAL: $ {Math.round(PRICE)}
+                </p>
+                <div className="flex gap-2">
+                  <Button
+                    className=" font-Jost text-[#ff4495] "
+                    onPress={onClose}
+                  >
+                    Close
+                  </Button>
+
+                  <ModalPurchase products={PRODUCTS.length > 0}/>
+                </div>
               </ModalFooter>
             </>
           )}
