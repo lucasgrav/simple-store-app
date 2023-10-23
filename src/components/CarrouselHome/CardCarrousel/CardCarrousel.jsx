@@ -25,7 +25,6 @@ const Card = ({ title, image, price, id }) => {
       <div className="h-[105px] lg:h-[200px] flex items-center">
         <img src={image} alt={title} className="w-[60px] lg:w-[105px]" />
       </div>
-
       <h2 className="font-Jost  text-sm truncate max-w-[200px]">{title}</h2>
       <div className="flex items-center gap-4">
         <ButtonCard>$ {price}</ButtonCard>
