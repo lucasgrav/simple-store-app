@@ -7,7 +7,14 @@ const ContainerProducts = () => {
   return (
     <main className="flex flex-col items-center gap-7 p-2 md:p-16">
       {PRODUCTS.map((product) => (
-        <CardProduct key={product.id} title={product.title} img={product.image} price={product.price} rating={product.rating.rate}/>
+        <CardProduct
+          key={product.id}
+          title={product.title}
+          img={product.image}
+          price={product.price}
+          rating={product.rating.rate}
+          id={product.id}
+        />
       ))}
     </main>
   );

@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { BsCartPlus } from "react-icons/bs";
 import { CgMore } from "react-icons/cg";
 import ButtonCard from "./ButtonCard/ButtonCard";
-const Card = ({ title, image, price }) => {
+import { useDispatch } from "react-redux";
+import { addCart } from "../../../redux/actions";
+const Card = ({ title, image, price, id }) => {
+  const dispatch = useDispatch();
   return (
     <motion.div
       className="flex flex-col gap-4 items-center justify-center  min-h-[200px] max-w-[400px]"
@@ -27,7 +30,10 @@ const Card = ({ title, image, price }) => {
       <div className="flex items-center gap-4">
         <ButtonCard>$ {price}</ButtonCard>
         <ButtonCard>
-          <BsCartPlus className="text-2xl" />
+          <BsCartPlus
+            className="text-2xl"
+            onClick={() => dispatch(addCart(id))}
+          />
         </ButtonCard>
         <ButtonCard>
           <CgMore className="text-2xl" />

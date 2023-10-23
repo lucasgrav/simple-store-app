@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "./views/Home";
 import Footer from "./components/Footer/Footer";
 import Products from "./views/Products";
+import ModalCart from "./components/ModalCart/ModalCart";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+      <ModalCart/>
       <Footer />
     </div>
   );

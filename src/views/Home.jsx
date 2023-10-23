@@ -14,7 +14,17 @@ const Home = () => {
   }, []);
   return (
     <>
-      <InfoHome />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
+        <InfoHome />
+      </motion.div>
       <CarrouselHome />
       <motion.div
         initial={{

@@ -5,6 +5,8 @@ import {
   SORT_PRICE,
   RESET_FILTERS,
   SEARCH_PRODUCT,
+  ADD_CART,
+  DELETE_CART_PRODUCT,
 } from "./action-types";
 import axios from "axios";
 
@@ -44,4 +46,11 @@ export const resetFilters = () => {
 };
 export const searchProduct = (value) => {
   return { type: SEARCH_PRODUCT, payload: value };
+};
+
+export const addCart = (id) => {
+  return { type: ADD_CART, payload: id };
+};
+export const deleteCartProduct = (id) => {
+  return { type: DELETE_CART_PRODUCT, payload: id };
 };

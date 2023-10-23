@@ -5,12 +5,16 @@ import {
   SORT_PRICE,
   RESET_FILTERS,
   SEARCH_PRODUCT,
+  ADD_CART,
+  DELETE_CART_PRODUCT,
 } from "./action-types";
 const initialState = {
   allProducts: [],
   allProductsSearched: [],
   productsBackUp: [],
   allCategories: [],
+  cartShop: [],
+  priceTotal: 0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -79,6 +83,36 @@ const reducer = (state = initialState, action) => {
         allProducts:
           productSearched.length > 0 ? productSearched : state.productsBackUp,
       };
+    // SEARCH PRODUCT
+    case ADD_CART:
+      let cartProductsFilter = state.productsBackUp.filter(
+        (product) => product.id === action.payload
+      );
+      return {
+        ...state,
+        cartShop: [...state.cartShop, cartProductsFilter[0]],
+        priceTotal: state.priceTotal + cartProductsFilter[0].price,
+      };
+
+    case DELETE_CART_PRODUCT:
+      // Encuentra el índice del primer producto con el ID especificado
+      const indexToDelete = state.cartShop.findIndex(
+        (product) => product.id === action.payload
+      );
+
+      if (indexToDelete !== -1) {
+        // Crea una copia del arreglo cartShop
+        const updatedCart = [...state.cartShop];
+
+        // Elimina el producto en el índice encontrado
+        let deletedItem = updatedCart.splice(indexToDelete, 1);
+
+        return {
+          ...state,
+          cartShop: updatedCart,
+          priceTotal: state.priceTotal - deletedItem[0].price,
+        };
+      }
     default:
       return { ...state };
   }

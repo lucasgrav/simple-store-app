@@ -19,6 +19,7 @@ const CarrouselHome = () => {
       {PRODUCTS?.length ? (
         <div className="flex justify-center gap-16">
           <CardCarrousel
+            id={PRODUCTS[index.cardOne].id}
             key={PRODUCTS[index.cardOne].title}
             title={PRODUCTS[index.cardOne].title}
             image={PRODUCTS[index.cardOne].image}
@@ -26,6 +27,7 @@ const CarrouselHome = () => {
           />
           <div className="hidden sm:flex">
             <CardCarrousel
+              id={PRODUCTS[index.cardOne].id}
               key={PRODUCTS[index.cardTwo].id}
               title={PRODUCTS[index.cardTwo].title}
               image={PRODUCTS[index.cardTwo].image}
@@ -34,6 +36,7 @@ const CarrouselHome = () => {
           </div>
           <div className="hidden lg:flex">
             <CardCarrousel
+              id={PRODUCTS[index.cardOne].id}
               key={PRODUCTS[index.cardThree].id}
               title={PRODUCTS[index.cardThree].title}
               image={PRODUCTS[index.cardThree].image}
@@ -42,6 +45,7 @@ const CarrouselHome = () => {
           </div>
           <div className="hidden xl:flex">
             <CardCarrousel
+              id={PRODUCTS[index.cardOne].id}
               key={PRODUCTS[index.cardFour].id}
               title={PRODUCTS[index.cardFour].title}
               image={PRODUCTS[index.cardFour].image}
