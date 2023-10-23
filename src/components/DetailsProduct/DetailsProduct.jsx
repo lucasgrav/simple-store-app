@@ -30,9 +30,8 @@ const DetailsProduct = ({ id }) => {
           category={product?.category}
           rate={product?.rating.rate}
         />
-        <FooterDetails price={product?.price} />
+        <FooterDetails price={product?.price} id={product?.id} />
       </div>
-      
     </article>
   );
 };
