@@ -1,4 +1,3 @@
-import GirlLike from "/assets/images/photo-girl-like.jpg";
 import { BiLogoGithub } from "react-icons/bi";
 const AboutSimple = () => {
   return (
@@ -6,7 +5,7 @@ const AboutSimple = () => {
       <h2 className="font-Nunito font-bold text-xl">
         <strong className="text-[#ff4495] lg:text-3xl"> SIMPLE-STORE </strong>PROJECT
       </h2>
-      <img src={GirlLike} alt="Girl jumping" className="w-72" />
+      <img src="/assets/images/photo-girl-like.jpg" alt="Girl jumping" className="w-72" />
       <p className="font-Jost max-w-5xl text-xl font-light lg:text-2xl">
         <strong className="text-[#ff4495]">"Simple Store"</strong> is a fake
         e-commerce website that fetches all its information from the{" "}
