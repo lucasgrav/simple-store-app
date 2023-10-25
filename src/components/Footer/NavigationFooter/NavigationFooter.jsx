@@ -7,7 +7,7 @@ const NavigationFooter = () => {
       <div className="flex font-Jost gap-4 text-[#5e5e5e] lg:flex-col lg:text-center">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/about">Contact</Link>
       </div>
     </section>
   );

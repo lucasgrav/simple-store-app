@@ -1,4 +1,8 @@
-import { AiOutlineShoppingCart, AiOutlineStar, AiOutlineEye } from "react-icons/ai";
+import {
+  AiOutlineStar,
+  AiOutlineEye,
+} from "react-icons/ai";
+import { BsCartPlus } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { addCart } from "../../redux/actions";
 import { useDispatch } from "react-redux";
@@ -38,14 +42,14 @@ const CardProduct = ({ title, img, price, rating, id }) => {
             <AiOutlineStar />
             {rating}
           </p>
-          <AiOutlineShoppingCart
+          <BsCartPlus
             className="text-xl  md:text-2xl cursor-pointer"
             onClick={() => {
               dispatch(addCart(id));
             }}
           />
           <Link to={`/details/${id}`}>
-            <AiOutlineEye  className="hidden sm:flex"/>
+            <AiOutlineEye className="hidden sm:flex" />
           </Link>
         </section>
       </div>

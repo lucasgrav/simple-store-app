@@ -11,11 +11,10 @@ const DesignBy = () => {
         >
           <BiLogoLinkedin className="ease-in-out duration-200 lg:hover:scale-110 cursor-pointer" />
         </a>
-        <a href="https://github.com/lucasgrav?tab=repositories" target="_blank">
+        <a href="https://github.com/lucasgrav" target="_blank">
           <BiLogoGithub className="ease-in-out duration-200 lg:hover:scale-110 cursor-pointer" />
         </a>
       </div>
-
       <p className="flex font-Jost gap-2 text-[#5e5e5e]">
         Developed by<strong className="text-[#ff4495]">Lucas Correa</strong>
       </p>
