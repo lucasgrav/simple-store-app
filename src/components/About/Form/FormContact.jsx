@@ -2,7 +2,13 @@ import { useForm, ValidationError } from "@formspree/react";
 const FormContact = () => {
   const [state, handleSubmit] = useForm(`${import.meta.env.VITE_CODE_FORM}`);
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <div className="mb-10 m-4 font-Jost flex  justify-center items-center w-[80%]  2xl:w-[40%]  bg-[url('/assets/images/footer-bg.webp')] border-y-2 h-[430px]">
+        <p className="text-3xl text-[#ff4495] text-center font-semibold">
+          ¡Thank you for contacting me!
+        </p>
+      </div>
+    );
   }
 
   return (
