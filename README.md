@@ -12,5 +12,9 @@
         project, I was able to perform unit testing for each component.
       </p>
 
+<strong>Technologies</strong>
+
+React.js - Vite - Tailwind - Axios - Fake Store API - Jest - React Testing Library - Formspree
+
 Deploy:
 https://simple-store-lucascorrea.vercel.app/ 
