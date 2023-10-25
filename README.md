@@ -14,7 +14,7 @@
 
 <strong>Technologies</strong>
 
-React.js - Vite - Tailwind - Axios - Fake Store API - Jest - React Testing Library - Formspree
+React.js - Vite - Tailwind - Framer Motion - Redux -  Axios - Fake Store API - Jest - React Testing Library - Formspree
 
 Deploy:
 https://simple-store-lucascorrea.vercel.app/ 
