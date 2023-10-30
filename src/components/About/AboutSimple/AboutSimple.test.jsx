@@ -32,7 +32,6 @@ describe("About Simple Description", () => {
       /is a fake e-commerce website that fetches all its information from the/i
     );
 
-    // Ahora puedes realizar tus aserciones en el párrafo.
     expect(paragraph).toBeTruthy();
   });
   it("Should render the GitHub link correctly", () => {
