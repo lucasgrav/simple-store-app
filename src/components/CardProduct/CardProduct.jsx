@@ -44,6 +44,7 @@ const CardProduct = ({ title, img, price, rating, id }) => {
           </p>
           <BsCartPlus
             className="text-xl  md:text-2xl cursor-pointer"
+            data-testid="cart-icon"
             onClick={() => {
               dispatch(addCart(id));
             }}

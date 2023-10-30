@@ -92,7 +92,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         cartShop: [...state.cartShop, cartProductsFilter[0]],
-        priceTotal: state.priceTotal + cartProductsFilter[0].price,
+        priceTotal: state.priceTotal + cartProductsFilter[0]?.price,
       };
 
     case DELETE_CART_PRODUCT:
