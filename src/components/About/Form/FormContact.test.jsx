@@ -1,6 +1,13 @@
-import { render, screen, cleanup, waitFor } from "@testing-library/react";
+import {
+  render,
+  screen,
+  cleanup,
+  waitFor,
+  fireEvent,
+} from "@testing-library/react";
 import { describe, it, afterEach, expect } from "vitest";
 import FormContact from "./FormContact";
+import userEvent from "@testing-library/user-event";
 
 describe("Form contact", () => {
   afterEach(cleanup);
@@ -40,4 +47,5 @@ describe("Form contact", () => {
     expect(button).toHaveProperty("type", "submit");
     expect(button).toBeTruthy();
   });
+
 });
