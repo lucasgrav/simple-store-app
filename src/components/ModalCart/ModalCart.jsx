@@ -9,7 +9,7 @@ import {
 } from "@nextui-org/react";
 import { AiOutlineShoppingCart, AiOutlineExpandAlt } from "react-icons/ai";
 import { useSelector } from "react-redux";
-import CardCart from "../ShoppingCart/CardCart/CardCart";
+import CardCart from "../ShoppingCart/subcomps/CardCart";
 import uuid from "react-uuid";
 import { useLocation } from "react-router-dom";
 import ModalPurchase from "../ModalPurchase/ModalPurchase";
