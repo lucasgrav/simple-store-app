@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import InputSearch from "./Filters/InputSearch";
-import OptionPrice from "./Filters/OptionPrice";
-import OptionProducts from "./Filters/OptionProducts";
+import InputSearch from "./subcomps/InputSearch";
+import OptionPrice from "./subcomps/OptionPrice";
+import OptionProducts from "./subcomps/OptionProducts";
 import { useDispatch } from "react-redux";
 import { getAllCategories } from "../../redux/actions";
-import ButtonResetFilters from "./Filters/ButtonReset";
+import ButtonResetFilters from "./subcomps/ButtonReset";
 
 const FilterProducts = () => {
   const dispatch = useDispatch();

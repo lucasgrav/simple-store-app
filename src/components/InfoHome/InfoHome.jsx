@@ -1,8 +1,8 @@
-import ButtonShop from "./ButtonShop/ButtonShop";
-import CaptionHome from "./Caption/CaptionHome";
-import DescriptionHome from "./Description/DescriptionHome";
-import ImageHome from "./Image/ImageHome";
-import TitleHome from "./Title/TitleHome";
+import ButtonShop from "./subcomps/ButtonShop";
+import CaptionHome from "./subcomps/CaptionHome";
+import DescriptionHome from "./subcomps/DescriptionHome";
+import ImageHome from "./subcomps/ImageHome";
+import TitleHome from "./subcomps/TitleHome";
 
 const InfoHome = () => {
   return (

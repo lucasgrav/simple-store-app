@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CardCarrousel from "./CardCarrousel/CardCarrousel";
+import CardCarrousel from "./subcomps/CardCarrousel";
 import useCarrousel from "./CustomHooks/useCarrousel";
 import { Progress } from "@nextui-org/react";
 

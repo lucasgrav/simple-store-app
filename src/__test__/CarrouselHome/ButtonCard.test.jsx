@@ -1,6 +1,6 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import { describe, it, afterEach} from "vitest";
-import ButtonCard from "./ButtonCard";
+import ButtonCard from "../../components/CarrouselHome/subcomps/ButtonCard";
 
 describe("Button card carrousel", () => {
   afterEach(cleanup);

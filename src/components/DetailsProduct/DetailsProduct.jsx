@@ -1,8 +1,8 @@
-import { getProduct } from "./utilsDetail";
+import { getProduct } from "./utils/utilsDetail";
 import { useEffect, useState } from "react";
 
-import DescriptionDetails from "./DescriptionDetails/DescriptionDetails";
-import FooterDetails from "./FooterDetails/FooterDetails";
+import DescriptionDetails from "./subcomps/DescriptionDetails";
+import FooterDetails from "./subcomps/FooterDetails";
 
 const DetailsProduct = ({ id }) => {
   const [product, setProduct] = useState();

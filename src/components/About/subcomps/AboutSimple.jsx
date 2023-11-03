@@ -7,7 +7,7 @@ const AboutSimple = () => {
       </h2>
       <img src="/assets/images/photo-girl-like.jpg" alt="Girl jumping" className="w-72" />
       <p className="font-Jost max-w-5xl text-xl font-light lg:text-2xl">
-        <strong className="text-[#ff4495]">"Simple Store"</strong> is a fake
+        <strong className="text-[#ff4495]">Simple Store</strong> is a fake
         e-commerce website that fetches all its information from the{" "}
         <strong className="text-[#ff4495]">Fake Store API</strong>. The purpose
         of this project, in addition to continuing to{" "}

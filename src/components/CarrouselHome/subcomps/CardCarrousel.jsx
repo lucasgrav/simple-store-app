@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BsCartPlus } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
-import ButtonCard from "./ButtonCard/ButtonCard";
+import ButtonCard from "./ButtonCard";
 import { useDispatch } from "react-redux";
 import { addCart } from "../../../redux/actions";
 import { Link } from "react-router-dom";

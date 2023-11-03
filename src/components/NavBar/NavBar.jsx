@@ -1,5 +1,5 @@
-import LinksNav from "./Links/LinksNav";
-import LogoNav from "./Logo/LogoNav";
+import LinksNav from "./subcomps/LinksNav";
+import LogoNav from "./subcomps/LogoNav";
 
 const NavBar = () => {
   return (

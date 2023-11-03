@@ -1,6 +1,6 @@
 import { render, cleanup, screen } from "@testing-library/react";
 import { describe, it, afterEach } from "vitest";
-import CardCategory from "./CardCategory";
+import CardCategory from "../../components/CategoriesHome/subcomps/CardCategory";
 
 describe("Card Category", () => {
   afterEach(cleanup);

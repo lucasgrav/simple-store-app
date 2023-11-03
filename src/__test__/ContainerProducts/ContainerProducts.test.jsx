@@ -3,15 +3,15 @@ import { Provider } from "react-redux";
 import { describe, it, afterEach } from "vitest";
 import store from "../../redux/store";
 import { BrowserRouter } from "react-router-dom";
-import CarrouselHome from "./CarrouselHome";
+import ContainerProducts from "../../components/ContainerProducts/ContainerProducts";
 
-describe("Carrousel Home", () => {
+describe("Container products", () => {
   afterEach(cleanup);
   it("Should render the component correctly", () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <CarrouselHome />
+          <ContainerProducts />
         </BrowserRouter>
       </Provider>
     );

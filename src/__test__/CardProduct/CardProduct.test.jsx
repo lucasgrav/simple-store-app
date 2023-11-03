@@ -11,7 +11,7 @@ import {
 } from "vitest";
 import store from "../../redux/store";
 import { BrowserRouter } from "react-router-dom";
-import CardProduct from "./CardProduct";
+import CardProduct from "../../components/CardProduct/CardProduct";
 
 describe("Card Product", () => {
   let componentRender;

@@ -1,4 +1,4 @@
-import CardCategory from "./CardCategory/CardCategory";
+import CardCategory from "./subcomps/CardCategory";
 import useCategories from "./CustomHook/useCategories";
 
 const CategoriesHome = () => {

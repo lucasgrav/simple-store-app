@@ -9,9 +9,9 @@ import {
   beforeEach,
   expect,
 } from "vitest";
-import store from "../../../redux/store";
+import store from "../../redux/store";
 import { BrowserRouter } from "react-router-dom";
-import CardCarrousel from "./CardCarrousel";
+import CardCarrousel from "../../components/CarrouselHome/subcomps/CardCarrousel";
 
 describe("Card Carrousel", () => {
   let componentRender;

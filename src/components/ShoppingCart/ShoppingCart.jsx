@@ -1,8 +1,7 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useSelector } from "react-redux";
-import CardCart from "./CardCart/CardCart";
+import CardCart from "./subcomps/CardCart";
 import uuid from "react-uuid";
-import ModalCart from "../ModalCart/ModalCart";
 import ModalPurchase from "../ModalPurchase/ModalPurchase";
 
 const ShoppingCart = () => {

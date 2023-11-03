@@ -2,12 +2,11 @@ import {
   render,
   screen,
   cleanup,
-  waitFor,
-  fireEvent,
+ 
 } from "@testing-library/react";
 import { describe, it, afterEach, expect } from "vitest";
-import FormContact from "./FormContact";
-import userEvent from "@testing-library/user-event";
+import FormContact from "../../components/About/Form/FormContact";
+
 
 describe("Form contact", () => {
   afterEach(cleanup);

@@ -1,6 +1,6 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import { describe, it, afterEach, expect } from "vitest";
-import AboutSimple from "./AboutSimple";
+import AboutSimple from "../../components/About/AboutSimple/AboutSimple";
 
 describe("About Simple Description", () => {
   afterEach(cleanup);
